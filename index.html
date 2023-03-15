@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/google-cloud-logo-24.png">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <div class="weather__container">
+        <div class="weather__search">
+            <i class='bx bx-map weather__search-icon'></i>
+            <input class="weather__search-input" type="text" placeholder="Wpisz swoją lokacje">
+            <button class="weather__search-btn" id="submit">
+                <i class='bx bx-search'></i>
+            </button>
+        </div>
+        <div class="weather__invalid">
+            <i class='bx bx-target-lock weather__invalid-icon'></i>
+            <p class="weather__invalid-paragraph">Ooops! Nie możemy namierzyć lokacji! :/ <br> Spróbuj ponownie! </p>
+            <button class=weather__invalid-btn id="invalid">
+                <i class='bx bx-left-arrow-alt'></i>
+            </button>
+        </div>
+        <div class="weather__rezult">
+            <i class=""></i>
+            <p class="weather__rezult-temperature"></p>
+            <p class="weather__rezult-description"></p>
+        </div>
+        <div class="weather__details">
+            <div class="weather__details-humidity">
+                <i class='bx bx-water weather__details-icon'></i>
+                <div class="weather__details-text">
+                    <span class="weather__details-span"></span>
+                    <p class="weather__details-paragraph" >Wilgotność</p>
+                </div>
+            </div>
+            <div class="weather__details-wind">
+                <i class='bx bx-wind weather__details-icon'></i>
+                <div class="weather__details-text">
+                    <span class="weather__details-span"></span>
+                    <p class="weather__details-paragraph">Wiatr</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
